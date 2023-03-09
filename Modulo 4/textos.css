@@ -1,0 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+html{
+    font-family: 'Rubik Iso', cursive;
+    font-size: large;
+    font-weight: 300; /*dependiendo de las fuentes, te permite cambiar el espesor*/
+
+}
+
