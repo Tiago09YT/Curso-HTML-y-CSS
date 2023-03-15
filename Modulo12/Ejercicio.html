@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de Interés en Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+    <section class="row container-fluid">
+        <div class="col">
+            <div class="bg-light p-5 rounded-3">
+                <div class="container-fluid">
+                    <h1 class="fw-bold display-4">Este es mi Jumbotron</h1>
+                    <p class="col-md-8 fs-4"> Se supone que con este boton se abre un modal.
+                    Yo mejor tengo cuidado pues con este boton, no se que hace.
+                    </p>
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#miModal" class="btn btn-primary btn-lg">A ver, abre el modal</button>
+                </div>
+            </div>
+            <div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Abriste el modal</h1>
+                    </div>
+                    <div class="modal-body">
+                        Es correcto. Este es mi modal. Lo lograste.
+                        En hora buena!
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col p-5">
+            <form>
+                <div class="mb-3">
+                    <label for="InputName" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="leInputName" placeholder="Tu nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Numero de telefono</label>
+                    <input type="number" class="form-control" id="phone" aria-describedby="phoneHelp">
+                    <div id="phoneHelp" class="form-text">Tu numero no va a ser usado para nada ilegal.</div>
+                </div>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" id="message" placeholder="Mensaje"></textarea>
+                    <label for="message">Mensaje</label>
+                </div> 
+            </form>
+        </div>
+        <div class="col p-5">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Santiago Yara Tovar</h5>
+                    <p class="card-text ">
+                        Soy un estudiante de openBootCamp, tratando
+                        de enfocar su vida profesional en el ámbito del 
+                        diseño web, pese a haber culminado su carrera de 
+                        ingeniería química.
+                    </p>
+                    <div class="card-footer bg-white">
+                        <p class="card-text">Contactame: sanyara@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+></script>
+</html>
